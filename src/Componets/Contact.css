@@ -1,0 +1,98 @@
+.contact {
+    min-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #121212;
+    color: white;
+}
+
+.contactTitle {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: yellow;
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.socialLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.socialLinks a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 40rem;
+}
+
+.contactForm input,
+.contactForm textarea {
+    background: #1e1e1e;
+    border: none;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+    outline: 2px solid yellow;
+}
+
+.submitBtn {
+    background-color: yellow;
+    color: black;
+    border: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submitBtn:hover {
+    background-color: #e6c300;
+}
+
+@media screen and (max-width: 768px) {
+    .contactTitle {
+        font-size: 2rem;
+    }
+
+    .contactForm {
+        padding: 0 1rem;
+    }
+    
+    .socialLinks {
+       
+        gap: 1rem;
+    }
+
+    .socialLinks a {
+        font-size: 1rem;
+    }
+}
+
+
+  

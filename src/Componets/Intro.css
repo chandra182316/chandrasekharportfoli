@@ -1,0 +1,125 @@
+#intro {
+  height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  
+}
+
+.bgs {
+  position: absolute;
+  top: -4rem;
+  right: 0;
+  z-index: -1;
+  object-fit: cover;
+  height: 100vh;
+}
+
+.introcontent {
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hello {
+  font-size: 1.75rem;
+  font-weight: 100;
+}
+
+.introname {
+  color: yellow;
+}
+
+.intropara {
+  font-size: medium;
+  font-weight: 100;
+}
+.intropara br {
+  display: inline; /* Ensures that <br> behaves normally in larger screens */
+}
+
+.btn {
+  background-color: white;
+  color: black;
+  height: 2.5rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.btnImg {
+  height: 1.5rem;
+  width: 1.5rem;
+  object-fit: contain;
+}
+
+
+@media screen and (max-width: 768px) {
+  #intro {
+      padding-top: 2rem;
+      height: auto;
+  }
+
+  .bgs {
+      height: auto;
+      width: 100%;
+      opacity: 0.2;
+      top: 0;
+  }
+
+  .introcontent {
+      height: auto;
+      width: 100%;
+      padding: 1rem;
+      font-size: 2rem;
+      align-items: flex-start;
+      z-index: 1;
+      margin-left: 20px;
+  }
+
+  .intropara br {
+    display: none; /* Hide <br> tag in mobile view */
+  }
+
+  .hello {
+      font-size: 1.3rem;
+  }
+
+  .intropara {
+      font-size: 0.95rem;
+      margin-top: 1rem;
+      line-height: 1.5;
+  }
+  
+
+  .btn {
+      margin-top: 1rem;
+      width: 100%;
+      height: 1.8rem;
+      font-size: 0.8rem;
+  }
+  .btnImg {
+    height: 1rem;
+    width: 1rem;
+    object-fit: contain;
+  }
+}
+
+
+
