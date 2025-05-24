@@ -2,7 +2,7 @@ import React from 'react';
 import bg from '../assets/sekhar.jpg.webp';
 
 import btnImg from '../assets/hireme.png';
-import resume from '../assets/CHANDRA SEKHAR KATAM.pdf';
+import resume from '../assets/chandra sekhar katam (2).pdf';
 
 import './Intro.css';
 
